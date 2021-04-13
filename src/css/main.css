@@ -429,6 +429,8 @@ Hero
 }
 .hero-img {
   display: none;
+  background: transparent;
+  width:420px;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -1039,4 +1041,5 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+  object-fit: cover;
 }
