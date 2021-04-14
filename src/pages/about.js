@@ -11,7 +11,7 @@ const About = ({data:{about:{nodes}}}) => {
   const{ title, stack,info,image} =nodes[0]
   return (
     <Layout>
-      <SEO title="About" description="resume of george nikoglou"/>
+     <SEO title="About" description="Who I am? Learn..."/>
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={image.childImageSharp.fluid} className="about-img"/>
