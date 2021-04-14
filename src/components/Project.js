@@ -17,7 +17,7 @@ const Project = ({description,title,github,stack,url,image,index}) => {
           <p className="project-desc">
             {description}
           </p>
-          <div className="proct-stack">
+          <div className="project-stack">
             {stack.map((item) => {
               return (
                 <span key={item.id}>{item.title}</span>
