@@ -4,12 +4,13 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 
 
-
 const Blog = ({id,title,image,date,category,slug,description}) => {
   return (
     <Link to ={`/blogs/${slug}`} key = {id} className="blog">
       <article>
-        <Image fluid={image.childImageSharp.fluid} className="blog-img"></Image>
+        {image && (
+          <Image fluid={image.childImageSharp.fluid} className="blog-img"></Image>
+        )}
         <div className="blog-card">
           <h4>{title}</h4>
           <p>{description}</p>
@@ -23,6 +24,15 @@ const Blog = ({id,title,image,date,category,slug,description}) => {
   )
 }
 
-Blog.propTypes = {}
+Blog.propTypes = {
+  id:PropTypes.string.isRequired,
+  title:PropTypes.string.isRequired,
+  date:PropTypes.string.isRequired,
+  category:PropTypes.string.isRequired,
+  description:PropTypes.string.isRequired,
+  slug:PropTypes.string.isRequired,
+  image:PropTypes.object.isRequired,
+}
+
 
 export default Blog
