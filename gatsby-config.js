@@ -43,10 +43,12 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Roboto",
-              variants: ["400", "700"],
+              family: "Poppins",
+              variants: ["200","400","500", "700","600","800","900"],
             },
-            { family: "Open Sans" },
+            { family: "Raleway" ,
+              variants: ["200","400","500", "700","600","800","900"],
+            },
           ],
         },
       },
