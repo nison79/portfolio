@@ -29,16 +29,16 @@ const Hero = () => {
             <article className="hero-info">
               <div>
                 <div className="underline"> </div>
-                  <h1>I'm <br />
+                  <h1> Hello, I'm <br />
                     George Nikoglou</h1>
-                  <h4>freelance web and mobile UI/UX Designer</h4>
+                  <h4>freelance React and GatsbyJS Developer</h4>
                   <Link to="/contact" className="btn">
                     Contact Me
                   </Link>
                   <SocialLinks />
               </div>
             </article>
-              <Image fluid={fluid} className="hero-img"/>
+              {/* <Image fluid={fluid} className="hero-img"/> */}
         </div>
     </header>
 

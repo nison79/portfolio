@@ -7,6 +7,7 @@ const contact = () => {
     <Layout>
       <SEO title="Contact" description="get in touch with me"/>
       <section className="contact-page">
+        <h1>Let's Build Something Together</h1>
         <article className="contact-form">
           <h3>get in touch</h3>
           <form action="https://formspree.io/f/xzbybnnq" method="POST">

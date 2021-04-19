@@ -129,23 +129,23 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-1);
+  background: var(--clr-primary-6);
   color: var(--clr-primary-10);
-  padding: 0.375rem 0.75rem;
+  padding: 0.675rem 0.85rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
-  border: 2px solid transparent;
+  border: 6px solid transparent;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
 .btn:hover {
   color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  background: var(--clr-primary-10);
 }
 .center-btn {
   display: block;
@@ -192,10 +192,11 @@ p {
   margin-top: 2rem;
   width: 15rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .social-link {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+  padding-right:1rem;
   color: var(--clr-grey-1);
   transition: var(--transition);
 }
@@ -733,6 +734,7 @@ Projects
     height: 30rem;
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
+    
   }
   .project-info {
     border-radius: var(--radius);
@@ -899,9 +901,10 @@ About Page
 .about-page {
   padding: 7rem 0;
 }
-.about-img {
+.about-img .gatsby-image-wrapper {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 20rem;
+  object-fit: cover;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -939,7 +942,7 @@ About Page
     align-items: center;
     column-gap: 4rem;
   }
-  .about-img {
+  .about-img  {
     grid-column: 1 / span 5;
     margin-bottom: 0;
   }

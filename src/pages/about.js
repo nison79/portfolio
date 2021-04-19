@@ -13,8 +13,9 @@ const About = ({data:{about:{nodes}}}) => {
     <Layout>
      <SEO title="About" description="Who I am? Learn..."/>
       <section className="about-page">
-        <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} className="about-img"/>
+        {/* put about-center class for the image */}
+        <div className="section-center ">  
+          {/* <Image fluid={image.childImageSharp.fluid} className="about-img"/> */}
           <article className="about-text">
             <Title title={title}/>
             <p>{info}</p>
@@ -44,7 +45,7 @@ export const query = graphql`
         info
         image {
           childImageSharp {
-            fluid {
+            fluid(fit: COVER,maxWidth:200) {
              ...GatsbyImageSharpFluid
             }
           }
