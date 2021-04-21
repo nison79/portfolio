@@ -1,8 +1,9 @@
-import React from "react"
+import React , { useRef ,useEffect} from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import { gsap } from 'gsap'
 
 
   const query = graphql`
@@ -17,14 +18,29 @@ import SocialLinks from "../constants/socialLinks"
         }
   `
 
+  
 
 const Hero = () => {
+  const heroRef = useRef(null)
+
+  useEffect(() => {
+    gsap.from(heroRef.current , {
+      scale:0.5,
+      x: -2000,
+      autoAlpha: 0,
+      ease:'ease',
+      duration:1.2
+    });
+},[]);
+
+
+
 
   const {file:{childImageSharp:{fluid}}} = useStaticQuery(query)
 
 
   return (
-    <header className="hero">
+    <header className="hero" ref={heroRef}>
         <div className="section-center hero-center">
             <article className="hero-info">
               <div>

@@ -1,15 +1,16 @@
-import React from "react"
+import React  from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const contact = () => {
+
   return (
     <Layout>
       <SEO title="Contact" description="get in touch with me"/>
-      <section className="contact-page">
-        <h1>Let's Build Something Together</h1>
+      <section className="contact-page" >
+        <h1>Let's Build Something Together.</h1>
         <article className="contact-form">
-          <h3>get in touch</h3>
+          <h3>Message Me.</h3>
           <form action="https://formspree.io/f/xzbybnnq" method="POST">
             <div className="form-group">
               <input type="text" name="name" placeholder="name" className="form-control"/>
